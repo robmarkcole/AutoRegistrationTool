@@ -1,13 +1,19 @@
 import numpy as np
 import cv2
 #from matplotlib import pyplot as plt
-import gdal
-from gdalconst import *
+try:
+	from osgeo import gdal
+	from osgeo import gdalconst
+except ImportError:
+	import gdal
+	from gdalconst import *
 import time
 import sys
 import os
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import *
 from second import *
 
 inputimgloc = None
@@ -17,7 +23,7 @@ iplist = []
 reflist = []
 
 
-class MainWindow(QMainWindow):
+class MainWindow(QtWidgets.QMainWindow):
 	
 	def __init__(self, parent=None):
 		super(MainWindow, self).__init__(parent)
