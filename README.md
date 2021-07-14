@@ -15,4 +15,4 @@ Contributors:  ANJAN DAS, AKASH MANNA, AMIT SHUKLA
 * `python3 -m venv venv`
 * `source venv/bin/activate`
 * `pip install -r requirements.txt`
-* `python3 main1.py`
+* `python3 main.py`
