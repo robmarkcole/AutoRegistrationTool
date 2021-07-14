@@ -2,12 +2,9 @@ import numpy as np
 import cv2
 
 # from matplotlib import pyplot as plt
-try:
-    from osgeo import gdal
-    from osgeo import gdalconst
-except ImportError:
-    import gdal
-    from gdalconst import *
+
+from osgeo import gdal
+from osgeo import gdalconst
 import time
 import sys
 import os

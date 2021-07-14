@@ -2,12 +2,7 @@ import numpy as np
 import cv2
 
 # from matplotlib import pyplot as plt
-try:
-    from osgeo import gdal, osr, gdalconst
-except ImportError:
-    import gdal
-    from gdalconst import *
-# import osr
+from osgeo import gdal, osr, gdalconst
 import time
 import sys
 import os
